@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estetik Photo Shoot - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Estetik Shoot</div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="Petunjuk.html">Petunjuk</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background-image: url('img/beautiful-green-mountains-covered-with-snow-peaks_1048944-2962751.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background-image: url('img/da55c7d217245e7dbb61164d00712b46.jpg');"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="hero-slide" style="background-image: url('img/R.jpg');"></div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="hero-overlay">
+            <h1>Estetik Photo Shoot</h1>
+            <p>Menangkap momen indah dengan sentuhan artistik</p>
+            <a href="#gallery" class="cta-btn">Lihat Karya</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Galeri Karya</h2>
+        <div class="gallery-main">
+            <div class="gallery-container">
+                <!-- Top Gallery Swiper (Slide ke kiri - reverse, 3 slides visible) -->
+                <div class="gallery-top">
+                    <div class="swiper gallery-top-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/kucing1.jpg" alt="Portrait 1" class="gallery-item" data-full="img/kucing1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/kucing1.jpg" alt="Fashion 1" class="gallery-item" data-full="img/kucing1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/kucing1.jpg" alt="Nature 1" class="gallery-item" data-full="img/kucing1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/kucing3.jpg" alt="Urban 1" class="gallery-item" data-full="img/kucing3.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+                <!-- Bottom Gallery Swiper (Slide ke kanan - normal, 3 slides visible) -->
+                <div class="gallery-bottom">
+                    <div class="swiper gallery-bottom-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/urban-landscape-photography-nyc.png" alt="Model 1" class="gallery-item" data-full="img/urban-landscape-photography-nyc.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/urban1.jpg" alt="Dreamy 1" class="gallery-item" data-full="img/urban1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/urbqn2.jpg" alt="Portrait 2" class="gallery-item" data-full="img/urbqn2.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/urban-landscape-photography-nyc.png" alt="Fashion 2" class="gallery-item" data-full="img/urban-landscape-photography-nyc.png">
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ringkasan Layanan - Link ke Halaman Terpisah -->
+        <div class="services-section">
+            <h3 id="layanan">Layanan Kami</h3>
+            <p>Pilih tema sesi foto yang sesuai kebutuhan Anda. Klik untuk liat detail dan contoh karya.</p>
+            <div class="services-grid">
+                <a href="wisuda.html" class="service-card" target="_blank" rel="noopener noreferrer">
+                    <div class="service-image">
+                        <img src="img/wisuda1.jpg" alt="Foto Wisuda">
+                    </div>
+                    <h4>Foto Wisuda</h4>
+                    <p>Abadikan momen kelulusan dengan gaya estetik.</p>
+                </a>
+                <a href="formal.html" class="service-card" target="_blank" rel="noopener noreferrer">
+                    <div class="service-image">
+                        <img src="img/formal1.jpg" alt="Foto Formal">
+                    </div>
+                    <h4>Foto Formal</h4>
+                    <p>Profesional untuk CV atau event resmi.</p>
+                </a>
+                <a href="prewedding.html" class="service-card" target="_blank" rel="noopener noreferrer">
+                    <div class="service-image">
+                        <img src="img/prewed1.jpg" alt="Foto Pre-Wedding">
+                    </div>
+                    <h4>Foto Pre-Wedding</h4>
+                    <p>Memori romantis sebelum hari besar.</p>
+                </a>
+                <a href="keluarga.html" class="service-card" target="_blank" rel="noopener noreferrer">
+                    <div class="service-image">
+                        <img src="img/fotokeluarga1.jpg" alt="Foto Keluarga">
+                    </div>
+                    <h4>Foto Keluarga</h4>
+                    <p>Kebersamaan hangat dan natural.</p>
+                </a>
+                <a href="teman.html" class="service-card" target="_blank" rel="noopener noreferrer">
+                    <div class="service-image">
+                        <img src="img/kelas1.png" alt="Foto with Teman Kelas">
+                    </div>
+                    <h4>Foto with Teman Kelas</h4>
+                    <p>Grup seru dengan pose candid.</p>
+                </a>
+                <a href="sirkel.html" class="service-card" target="_blank" rel="noopener noreferrer">
+                    <div class="service-image">
+                        <img src="img/sirkel1.jpg" alt="Foto Acara Sirkel">
+                    </div>
+                    <h4>Foto Acara Sirkel</h4>
+                    <p>Dinamis untuk komunitas.</p>
+                </a>
+                <a href="produk.html" class="service-card" target="_blank" rel="noopener noreferrer">
+                    <div class="service-image">
+                        <img src="img/produk1.jpg" alt="Foto Produk">
+                    </div>
+                    <h4>Foto Produk</h4>
+                    <p>Berkualitas untuk e-commerce.</p>
+                </a>
+                <a href="lain.html" class="service-card" target="_blank" rel="noopener noreferrer">
+                    <div class="service-image">
+                        <img src="img/lain1.jpg" alt="Lain-Lain">
+                    </div>
+                    <h4>Lain-Lain</h4>
+                    <p>Custom request unik Anda.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Saya adalah fotografer passion yang suka bikin sesi photo shoot jadi pengalaman magis. Dari portrait sampe fashion, setiap frame gue desain buat cerita lo. Yuk, kolab bareng!</p>
+            </div>
+            <div class="about-image">
+                <img src="img/person.jpg" alt="Admin Photo Shoot" class="admin-photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Booking Sesi</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Pesan atau Detail Sesi" rows="5" required></textarea>
+            <button type="submit" class="cta-btn">Kirim</button>
+        </form>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" id="lightboxImg">
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Estetik Photo Shoot. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

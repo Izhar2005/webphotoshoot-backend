@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto Produk - Estetik Photo Shoot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Estetik Shoot</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" target="_blank" rel="noopener noreferrer">Home</a></li>
+                <li><a href="index.html#gallery" target="_blank" rel="noopener noreferrer">Gallery</a></li>
+                <li><a href="index.html#about" target="_blank" rel="noopener noreferrer">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-slide" style="background-image: url('img/produk/wallpaper\ produk.jpg');"></div> <!-- Ganti dengan hero khusus wisuda -->
+        <div class="hero-overlay">
+            <h1>Foto Produk</h1>
+            <p>Berkualitas tinggi untuk e-commerce atau katalog. Pencahayaan sempurna dan angle kreatif yang menjual</p>
+            <a href="#gallery" class="cta-btn">Lihat Contoh</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Contoh Karya Produk</h2>
+        <div class="gallery-container">
+            <!-- Swiper Galeri Khusus Produk (animasi loop sama) -->
+            <div class="swiper produk-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/produk1.jpg" alt="Wisuda 1" class="gallery-item" data-full="img/produk1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk2.jpg" alt="Wisuda 2" class="gallery-item" data-full="img/produk2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk3.png" alt="Wisuda 3" class="gallery-item" data-full="img/produk3.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk1.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk1.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product1.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product1.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product2.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product2.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product3.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product3.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product4.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product4.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product5.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product5.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product6.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product6.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product7.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product7.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product8.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product8.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/produk/product9.jpg" alt="Wisuda 4" class="gallery-item" data-full="img/produk/product9.jpg"> <!-- Tambah lebih banyak kalo ada -->
+                    </div>
+                    
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <p class="gallery-desc">Setiap sesi foto produk dirancang personal, mulai dari Rp 300.000 per item. Hubungi untuk detail paket.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Booking Sesi Foto Produk</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Detail Sesi (misal: Tanggal wisuda, lokasi, jumlah orang)" rows="5" required></textarea>
+            <button type="submit" class="cta-btn">Kirim Booking</button>
+        </form>
+    </section>
+
+    <!-- Lightbox Modal (sama kayak index.html) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img" id="lightboxImg">
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Estetik Photo Shoot. All rights reserved. <a href="index.html" target="_blank" rel="noopener noreferrer">Kembali ke Home</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script> <!-- Pastiin script.js punya inisialisasi swiper khusus .wisuda-swiper -->
+</body>
+</html>
