@@ -118,7 +118,7 @@ document.querySelector('.contact-form').addEventListener('submit', async functio
     }
 
     try {
-        const response = await fetch('http://localhost:5000/submit-booking', {
+        const response = await fetch('https://webphotoshoot-backend-production.up.railway.app/submit-booking', {
             method: 'POST',
             mode: 'cors',
             headers: { 
