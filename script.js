@@ -119,13 +119,14 @@ document.querySelector('.contact-form').addEventListener('submit', async functio
 
     try {
         const response = await fetch('https://webphotoshoot-backend-production.up.railway.app/submit-booking', {
-            method: 'POST',
-            mode: 'cors',
-            headers: { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify(formData)
+    method: 'POST',
+    mode: 'cors',
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify(formData)
+            
         });
         const result = await response.json();
         if (response.ok) {
