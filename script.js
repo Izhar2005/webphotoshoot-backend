@@ -126,8 +126,7 @@ document.querySelector('.contact-form').addEventListener('submit', async functio
         'Accept': 'application/json'
     },
     body: JSON.stringify(formData)
-            
-        });
+});
         const result = await response.json();
         if (response.ok) {
             // Show loading alert first
